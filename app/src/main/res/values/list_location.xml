@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location_list">
+        <item>Phnom Penh</item>
+        <item>Banteay Meanchey</item>
+        <item>Battambang</item>
+        <item>Kampong Cham</item>
+        <item>Kampong Chhnang</item>
+        <item>Kampong Speu</item>
+        <item>Kampong Thom</item>
+        <item>Kampot</item>
+        <item>Kandal</item>
+        <item>Kep</item>
+        <item>Koh Kong </item>
+        <item>Kratié</item>
+        <item>Mondulkiri</item>
+        <item>Oddar Meanchey </item>
+        <item>Pailin</item>
+        <item>Preah Vihear </item>
+        <item>Pursat</item>
+        <item>Prey Veng </item>
+        <item>Ratanakiri </item>
+        <item>Siem Reap</item>
+        <item>Sihanoukville </item>
+        <item>Stung Treng </item>
+        <item>Svay Rieng </item>
+        <item>Takéo</item>
+        <item>Tboung Khmum</item>
+    </string-array>
+</resources>
