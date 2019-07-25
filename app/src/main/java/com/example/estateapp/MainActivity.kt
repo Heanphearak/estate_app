@@ -1,47 +1,68 @@
 package com.example.estateapp
 
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.viewpager.widget.ViewPager
-import com.google.android.material.tabs.TabLayout
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
-    var tabLayout: TabLayout? = null
-    var viewPager: ViewPager? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 
-        tabLayout = findViewById<TabLayout>(R.id.tabLayout)
-        viewPager = findViewById<ViewPager>(R.id.viewPager)
+        val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
 
-        tabLayout!!.addTab(tabLayout!!.newTab().setText("HOME"))
-        tabLayout!!.addTab(tabLayout!!.newTab().setText("POST"))
-        tabLayout!!.addTab(tabLayout!!.newTab().setText("HISTORY"))
-        tabLayout!!.addTab(tabLayout!!.newTab().setText("ABOUT US"))
-        tabLayout!!.tabGravity = TabLayout.GRAVITY_FILL
+                R.id.nav_home -> {
+                    println("home pressed")
 
-        val adapter = MyAdapter(this, supportFragmentManager, tabLayout!!.tabCount)
-        viewPager!!.adapter = adapter
+                    val homeFragment = HomeFragment()// initialize fragment
+                    loadFragment(homeFragment) // load fragment when user click on navigation home
 
-        viewPager!!.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))
+                    return@OnNavigationItemSelectedListener true
+                }
 
-        tabLayout!!.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-            override fun onTabSelected(tab: TabLayout.Tab) {
-                viewPager!!.currentItem = tab.position
+                R.id.nav_post -> {
+                    println("post pressed")
+                    val postFragment = PostFragment()
+                    loadFragment(postFragment)
+                    return@OnNavigationItemSelectedListener true
+                }
+
+                R.id.nav_history -> {
+                    println("history pressed")
+                    val historyFragment = HistoryFragment()
+                    loadFragment(historyFragment)
+                    return@OnNavigationItemSelectedListener true
+                }
+
+                R.id.nav_about_us -> {
+                    println("about us pressed")
+                    val aboutUsFragment = AboutUsFragment()
+                    loadFragment(aboutUsFragment)
+                    return@OnNavigationItemSelectedListener true
+                }
             }
-            override fun onTabUnselected(tab: TabLayout.Tab) {
+            false
 
-            }
-            override fun onTabReselected(tab: TabLayout.Tab) {
-
-            }
-        })
+        }
 
 
+        bottom_nav_view.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+
+    }
 
 
+
+    private fun loadFragment(fragment: Fragment){
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragmentContainer, fragment)
+        fragmentTransaction.commit()
     }
 }

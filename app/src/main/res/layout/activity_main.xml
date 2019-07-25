@@ -9,21 +9,29 @@
         tools:context=".MainActivity">
 
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorBackgroundTab"
-        android:layout_alignParentBottom="true"
-        app:tabSelectedTextColor="@color/colorTab"
-        app:tabTextColor="@android:color/background_light">
-    </com.google.android.material.tabs.TabLayout>
 
-    <androidx.viewpager.widget.ViewPager
-            android:id="@+id/viewPager"
-            app:layout_constraintBottom_toTopOf="@+id/tabLayout"
+    <FrameLayout
+            android:layout_above="@id/bottom_nav_view"
+            android:orientation="vertical"
+            android:id="@+id/fragmentContainer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-    </androidx.viewpager.widget.ViewPager>
+            android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:background="#A64454"
+            android:id="@+id/bottom_nav_view"
+            app:menu="@menu/bottom_navigation_menu"
+            android:layout_width="match_parent"
+
+            android:layout_alignParentBottom="true"
+            app:labelVisibilityMode="labeled"
+            android:layout_height="wrap_content"
+            app:itemTextColor="@drawable/item_selected_nav_view"
+            app:itemIconTint="@drawable/item_selected_nav_view"
+            android:layout_marginBottom="0dp"/>
+
 
 </RelativeLayout>
