@@ -19,7 +19,7 @@ class MyAdapter(private val myContext: Context, fm: FragmentManager,internal var
             }
             1 -> {
                 Log.i("fragment1","hello1")
-                return PostFragment()
+                return PostRegisterFragment()
             }
             2 -> {
                 // val movieFragment = MovieFragment()

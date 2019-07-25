@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.nav_post -> {
                     println("post pressed")
-                    val postFragment = PostFragment()
+                    val postFragment = PostRegisterFragment()
                     loadFragment(postFragment)
                     return@OnNavigationItemSelectedListener true
                 }

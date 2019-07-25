@@ -7,4 +7,5 @@
     <color name="colorText">#FFFFFF</color>
     <color name="colorBackground">#91B7D9</color>
     <color name="colorBackgroundTab">#A64454</color>
+    <color name="colorTextBtn">#2BA8D9</color>
 </resources>

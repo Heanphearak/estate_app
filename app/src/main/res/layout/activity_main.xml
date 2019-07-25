@@ -33,5 +33,4 @@
             app:itemIconTint="@drawable/item_selected_nav_view"
             android:layout_marginBottom="0dp"/>
 
-
 </RelativeLayout>
