@@ -4,6 +4,18 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context=".HistoryFragment">
-
-
+            <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/stlye_forminput"
+                    android:textColorHint="@color/colorText"
+                    android:textColor="@color/colorText"
+                    android:textStyle="bold"
+                    android:id="@+id/simplePassword"
+                    tools:ignore="HardcodedText"
+                    android:hint="Password"/>
 </FrameLayout>
