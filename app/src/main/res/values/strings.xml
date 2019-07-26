@@ -1,14 +1,18 @@
 <resources>
+
     <string name="app_name">EstateApp</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="title_seller">Wellcome To Estate Saller</string>
+
     <string name="text_description">Description : The house is at DownTown good location
         for Business near super market ,Bank, University, School,
         Restaurant, Mart, Phone shop, Coffe shop, Gasoline
         Station and Multipurpose ….
     </string>
+
     <string name="company_location">3rd Floor, Casa By Meridian, Tonle Bassac,
         Chamkamor Diamond Island, 1 Harvard St,
         Phnom Penh
@@ -16,4 +20,10 @@
 
     <string name="key_api">AIzaSyA6lVuEi0lWetzHh35oMS4wuQOC1zCChY0
     </string>
+
+    <string name="action_for_rent">For Rent</string>
+    <string name="action_for_sale">For Sale</string>
+    <string name="action_for_show_all">Show All</string>
+
+
 </resources>

@@ -9,8 +9,116 @@
         tools:context=".MainActivity">
 
 
+    <LinearLayout android:layout_width="match_parent"
+                  android:id="@+id/menu_toolbar"
+                  android:orientation="horizontal"
+                  android:background="#A64454"
+                  android:layout_height="50dp">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_weight="1"
+                      android:id="@+id/linear_dpdHouse"
+                      android:layout_height="match_parent">
+
+            <Button android:layout_width="match_parent"
+                    android:text="HOUSE"
+                    android:textColor="#fff"
+                    android:background="#A64454"
+                    android:id="@+id/dpdHouse"
+                    android:textSize="@dimen/font_size_small"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_weight="1"
+                      android:id="@+id/linear_dpdVilla"
+                      android:layout_height="match_parent">
+
+
+            <Button android:layout_width="match_parent"
+                    android:text="VILLA"
+                    android:id="@+id/dpdVilla"
+                    android:textColor="#fff"
+                    android:background="#A64454"
+                    android:textSize="@dimen/font_size_small"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_weight="1"
+                      android:id="@+id/linear_dpdLand"
+                      android:layout_height="match_parent">
+
+            <Button android:layout_width="match_parent"
+                    android:text="LAND"
+                    android:id="@+id/dpdLand"
+                    android:textColor="#fff"
+                    android:background="#A64454"
+                    android:textSize="@dimen/font_size_small"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_weight="1"
+                      android:id="@+id/linear_dpdCondo"
+                      android:layout_height="match_parent">
+
+            <Button android:layout_width="match_parent"
+                    android:text="CONDO"
+                    android:id="@+id/dpdCondo"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/font_size_small"
+                    android:background="#A64454"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_weight="1"
+                      android:id="@+id/linear_dpdBuilding"
+                      android:layout_height="match_parent">
+
+            <Button android:layout_width="match_parent"
+                    android:text="BUILDING"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/font_size_small"
+                    android:background="#A64454"
+                    android:textStyle="bold"
+                    android:id="@+id/dpdBuilding"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
 
     <FrameLayout
+            android:layout_below="@id/menu_toolbar"
             android:layout_above="@id/bottom_nav_view"
             android:id="@+id/fragmentContainer"
             android:layout_width="match_parent"

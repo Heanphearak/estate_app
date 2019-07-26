@@ -7,230 +7,242 @@
               android:gravity="center"
               android:layout_height="match_parent">
 
-
-
-    <LinearLayout android:layout_width="match_parent"
-                  android:background="@drawable/style_mainform"
-                  android:orientation="vertical"
-                  android:layout_height="720dp">
-
-
-        <LinearLayout
-
-                android:layout_marginTop="10dp"
-                android:gravity="right"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-            <Button android:layout_width="150dp"
-                    android:background="#979FA8"
-                    android:textColor="#A64454"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/font_size_medium"
-                    android:text="Type of Estate"
-                    android:textAllCaps="false"
-                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
-                    android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-
-
-
-        <TextView android:layout_width="match_parent"
-                  android:text="Welcome To Estate Seller"
-                  android:textStyle="bold"
-                  android:textColor="#A64454"
-                  android:textAlignment="center"
-                  android:textSize="@dimen/font_size_x_large"
-                  android:layout_height="wrap_content"/>
-
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
         <LinearLayout android:layout_width="match_parent"
-                      android:layout_marginTop="2dp"
+                      android:background="@drawable/style_mainform"
                       android:orientation="vertical"
-                      android:padding="15dp"
-                      android:layout_height="wrap_content">
+                      android:layout_height="715dp">
 
 
-            <LinearLayout android:layout_width="match_parent"
-                          android:background="#fff"
-                          android:gravity="center"
-                          android:layout_height="80dp">
+            <LinearLayout
 
-                <ImageView android:layout_width="150dp"
-                           android:scaleType="fitXY"
-                           android:src="@drawable/ic_image_black_24dp"
-                           android:layout_height="90dp"/>
-
-            </LinearLayout>
-
-
-            <EditText android:layout_width="match_parent"
-                      android:inputType="text"
-                      android:hint="Price"
-                      android:backgroundTint="#A64454"
-                      android:textColorHint="#A64454"
-                      android:layout_height="wrap_content"/>
-
-
-            <EditText android:layout_width="match_parent"
-                      android:inputType="text"
-                      android:hint="Land Size"
-                      android:backgroundTint="#A64454"
-                      android:textColorHint="#A64454"
-                      android:layout_height="wrap_content"/>
-
-
-            <EditText android:layout_width="match_parent"
-                      android:inputType="text"
-                      android:hint="House Size"
-                      android:backgroundTint="#A64454"
-                      android:textColorHint="#A64454"
-                      android:layout_height="wrap_content"/>
-
-
-            <EditText android:layout_width="match_parent"
-                      android:inputType="numberDecimal"
-                      android:hint="Bedroom Number"
-                      android:backgroundTint="#A64454"
-                      android:textColorHint="#A64454"
-                      android:layout_height="wrap_content"/>
-
-
-            <EditText android:layout_width="match_parent"
-                      android:inputType="numberDecimal"
-                      android:hint="Bathroom Number"
-                      android:backgroundTint="#A64454"
-                      android:textColorHint="#A64454"
-                      android:layout_height="wrap_content"/>
-
-            <Spinner android:layout_width="match_parent"
-                     android:id="@+id/spinner_location"
-                     android:backgroundTint="#A64454"
-                     android:entries="@array/location_list"
-                     android:layout_height="wrap_content">
-            </Spinner>
-
-
-            <EditText android:layout_width="match_parent"
-                      android:inputType="date"
-                      android:hint="Posted Date"
-                      android:backgroundTint="#A64454"
-                      android:textColorHint="#A64454"
-                      android:drawableRight="@drawable/ic_date_range_black_24dp"
-                      android:layout_height="wrap_content"/>
-
-
-
-            <EditText android:layout_width="match_parent"
-                      android:inputType="text"
-                      android:hint="Phone Number"
-                      android:backgroundTint="#A64454"
-                      android:textColorHint="#A64454"
-                      android:layout_height="wrap_content"/>
-
-
-            <LinearLayout android:layout_width="match_parent"
-                          android:layout_height="wrap_content">
-
-                <EditText android:layout_width="match_parent"
-                          android:inputType="textMultiLine"
-                          android:hint="Description"
-                          android:textAlignment="center"
-                          android:background="#fff"
-                          android:layout_height="70dp"/>
-
-            </LinearLayout>
-
-
-
-            <EditText android:layout_width="match_parent"
-                      android:visibility="gone"
-                      android:inputType="text"
-                      android:hint="Name of Condo"
-                      android:backgroundTint="#A64454"
-                      android:textColorHint="#A64454"
-                      android:layout_height="wrap_content"/>
-
-
-            <EditText android:layout_width="match_parent"
-                      android:visibility="gone"
-                      android:inputType="text"
-                      android:hint="Name of Building"
-                      android:backgroundTint="#A64454"
-                      android:textColorHint="#A64454"
-                      android:layout_height="wrap_content"/>
-
-            <EditText android:layout_width="match_parent"
-                      android:visibility="gone"
-                      android:inputType="text"
-                      android:hint="Type of Villa"
-                      android:backgroundTint="#A64454"
-                      android:textColorHint="#A64454"
-                      android:layout_height="wrap_content"/>
-
-            <EditText android:layout_width="match_parent"
-                      android:visibility="gone"
-                      android:inputType="text"
-                      android:hint="Villa Size"
-                      android:backgroundTint="#A64454"
-                      android:textColorHint="#A64454"
-                      android:layout_height="wrap_content"/>
-
-
-            <EditText android:layout_width="match_parent"
-                      android:visibility="gone"
-                      android:inputType="text"
-                      android:hint="Building Size"
-                      android:backgroundTint="#A64454"
-                      android:textColorHint="#A64454"
-                      android:layout_height="wrap_content"/>
-
-
-            <RelativeLayout
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="90dp">
-
-
-                <ImageButton android:layout_width="match_parent"
-                             android:id="@+id/img_location"
-                             android:src="@drawable/google_map"
-                             android:layout_height="wrap_content"/>
-
+                    android:layout_height="wrap_content">
 
                 <Button android:layout_width="150dp"
-                        android:id="@+id/btn_mark_location"
-                        android:background="#fff"
-                        android:layout_centerInParent="true"
-                        android:text="Mark Location"
-                        android:textAllCaps="false"
-                        android:textColor="#2BA8D9"
+                        android:id="@+id/dpdTypeEstate"
+                        android:background="#979FA8"
+                        android:textColor="#A64454"
                         android:textStyle="bold"
+                        android:textSize="@dimen/font_size_medium"
+                        android:text="Type of Estate"
+                        android:textAllCaps="false"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
                         android:layout_height="wrap_content"/>
 
+            </LinearLayout>
 
-            </RelativeLayout>
 
+
+            <TextView android:layout_width="match_parent"
+                      android:text="Welcome To Estate Seller"
+                      android:textStyle="bold"
+                      android:textColor="#A64454"
+                      android:textAlignment="center"
+                      android:textSize="@dimen/font_size_x_large"
+                      android:layout_height="wrap_content"/>
 
 
             <LinearLayout android:layout_width="match_parent"
-                          android:gravity="center"
-                          android:layout_height="60dp">
+                          android:layout_marginTop="2dp"
+                          android:orientation="vertical"
+                          android:padding="15dp"
+                          android:layout_height="wrap_content">
 
-                <Button android:layout_width="150dp"
-                        android:layout_marginTop="0dp"
-                        android:text="Post To Sale"
-                        android:background="#2BA8D9"
-                        android:textColor="@color/colorText"
-                        android:layout_height="40dp"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:background="#fff"
+                              android:gravity="center"
+                              android:layout_height="80dp">
+
+                    <ImageView android:layout_width="150dp"
+                               android:scaleType="fitXY"
+                               android:src="@drawable/ic_image_black_24dp"
+                               android:layout_height="90dp"/>
+
+                </LinearLayout>
+
+
+                <EditText android:layout_width="match_parent"
+                          android:inputType="text"
+                          android:id="@+id/inputPriceHouse"
+                          android:hint="Price"
+                          android:backgroundTint="#A64454"
+                          android:textColorHint="#A64454"
+                          android:layout_height="wrap_content"/>
+
+
+                <EditText android:layout_width="match_parent"
+                          android:inputType="text"
+                          android:id="@+id/inputLandSizeHouse"
+                          android:hint="Land Size"
+                          android:backgroundTint="#A64454"
+                          android:textColorHint="#A64454"
+                          android:layout_height="wrap_content"/>
+
+
+                <EditText android:layout_width="match_parent"
+                          android:inputType="text"
+                          android:id="@+id/inputHouseSize"
+                          android:hint="House Size"
+                          android:backgroundTint="#A64454"
+                          android:textColorHint="#A64454"
+                          android:layout_height="wrap_content"/>
+
+
+                <EditText android:layout_width="match_parent"
+                          android:inputType="numberDecimal"
+                          android:id="@+id/inputBedroomNumberHouse"
+                          android:hint="Bedroom Number"
+                          android:backgroundTint="#A64454"
+                          android:textColorHint="#A64454"
+                          android:layout_height="wrap_content"/>
+
+
+                <EditText android:layout_width="match_parent"
+                          android:inputType="numberDecimal"
+                          android:id="@+id/inputBathroomNumberHouse"
+                          android:hint="Bathroom Number"
+                          android:backgroundTint="#A64454"
+                          android:textColorHint="#A64454"
+                          android:layout_height="wrap_content"/>
+
+                <Spinner android:layout_width="match_parent"
+                         android:id="@+id/spinner_location"
+                         android:backgroundTint="#A64454"
+                         android:entries="@array/location_list"
+                         android:layout_height="wrap_content">
+                </Spinner>
+
+
+                <EditText android:layout_width="match_parent"
+                          android:inputType="date"
+                          android:id="@+id/inputPostDate"
+                          android:hint="Posted Date"
+                          android:backgroundTint="#A64454"
+                          android:textColorHint="#A64454"
+                          android:drawableRight="@drawable/ic_date_range_black_24dp"
+                          android:layout_height="wrap_content"/>
+
+
+
+                <EditText android:layout_width="match_parent"
+                          android:id="@+id/inputPhoneNumberHouse"
+                          android:inputType="text"
+                          android:hint="Phone Number"
+                          android:backgroundTint="#A64454"
+                          android:textColorHint="#A64454"
+                          android:layout_height="wrap_content"/>
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                    <EditText android:layout_width="match_parent"
+                              android:inputType="textMultiLine"
+                              android:hint="Description"
+                              android:id="@+id/inputDescription"
+                              android:textAlignment="center"
+                              android:background="#fff"
+                              android:layout_height="70dp"/>
+
+                </LinearLayout>
+
+
+
+                <EditText android:layout_width="match_parent"
+                          android:visibility="gone"
+                          android:inputType="text"
+                          android:hint="Name of Condo"
+                          android:backgroundTint="#A64454"
+                          android:textColorHint="#A64454"
+                          android:layout_height="wrap_content"/>
+
+
+                <EditText android:layout_width="match_parent"
+                          android:visibility="gone"
+                          android:inputType="text"
+                          android:hint="Name of Building"
+                          android:backgroundTint="#A64454"
+                          android:textColorHint="#A64454"
+                          android:layout_height="wrap_content"/>
+
+                <EditText android:layout_width="match_parent"
+                          android:visibility="gone"
+                          android:inputType="text"
+                          android:hint="Type of Villa"
+                          android:backgroundTint="#A64454"
+                          android:textColorHint="#A64454"
+                          android:layout_height="wrap_content"/>
+
+                <EditText android:layout_width="match_parent"
+                          android:visibility="gone"
+                          android:inputType="text"
+                          android:hint="Villa Size"
+                          android:backgroundTint="#A64454"
+                          android:textColorHint="#A64454"
+                          android:layout_height="wrap_content"/>
+
+
+                <EditText android:layout_width="match_parent"
+                          android:visibility="gone"
+                          android:inputType="text"
+                          android:hint="Building Size"
+                          android:backgroundTint="#A64454"
+                          android:textColorHint="#A64454"
+                          android:layout_height="wrap_content"/>
+
+
+                <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp">
+
+
+                    <ImageButton android:layout_width="match_parent"
+                                 android:id="@+id/img_location"
+                                 android:src="@drawable/google_map"
+                                 android:layout_height="wrap_content"/>
+
+
+                    <Button android:layout_width="150dp"
+                            android:id="@+id/btn_mark_location"
+                            android:background="#fff"
+                            android:layout_centerInParent="true"
+                            android:text="Mark Location"
+                            android:textAllCaps="false"
+                            android:textColor="#2BA8D9"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:gravity="center"
+                              android:layout_marginTop="6dp"
+                              android:layout_height="60dp">
+
+                    <Button android:layout_width="150dp"
+                            android:text="Post To Sale"
+                            android:id="@+id/btn_postSale"
+                            android:background="@drawable/style_button"
+                            android:textColor="@color/colorText"
+                            android:layout_height="40dp"/>
+
+                </LinearLayout>
 
             </LinearLayout>
-
 
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

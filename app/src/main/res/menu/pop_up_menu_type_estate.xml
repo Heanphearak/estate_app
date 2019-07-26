@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/item_house"
+            android:title="House"
+            app:showAsAction="never"
+    >
+
+    </item>
+
+
+    <item
+            android:id="@+id/item_land"
+            android:title="Land"
+            app:showAsAction="never"
+    >
+
+    </item>
+
+
+    <item
+            android:id="@+id/item_condo"
+            android:title="Condo"
+            app:showAsAction="never"
+    >
+
+    </item>
+
+
+    <item
+            android:id="@+id/item_villa"
+            android:title="Villa"
+            app:showAsAction="never"
+    >
+
+    </item>
+
+
+    <item
+            android:id="@+id/item_building"
+            android:title="Building"
+            app:showAsAction="never"
+    >
+
+    </item>
+
+</menu>

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.estateapp.R
@@ -28,6 +29,14 @@ class LoginFragment: Fragment(){
         backToRegister.setOnClickListener {
 
             val fragment = RegisterFragment()
+            loadFragment(fragment)
+        }
+
+
+        val btnLogin = view.findViewById(R.id.btn_login) as Button
+
+        btnLogin.setOnClickListener {
+            val fragment = PostProductFragment()
             loadFragment(fragment)
         }
 
