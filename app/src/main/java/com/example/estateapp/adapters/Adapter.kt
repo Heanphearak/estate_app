@@ -1,12 +1,13 @@
-package com.example.estateapp
+package com.example.estateapp.adapters
 
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.estateapp.models.EstateData
+import com.example.estateapp.R
 
 class Adapter (val estateDataList: ArrayList<EstateData>): RecyclerView.Adapter<Adapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

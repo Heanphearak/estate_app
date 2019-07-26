@@ -3,17 +3,18 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+            android:orientation="vertical"
+              android:gravity="center"
+              android:padding="20dp"
+             tools:context="com.example.estateapp.fragments.RegisterFragment">
 
-             tools:context=".PostRegisterFragment">
     <LinearLayout
-            android:layout_marginTop="100dp"
-            android:layout_marginBottom="120dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:background="@drawable/style_mainform"
             android:orientation="vertical"
-            android:layout_height="match_parent">
+            android:layout_height="500dp">
+
         <TextView
                 android:layout_marginTop="60dp"
                 android:textAlignment="center"
@@ -23,47 +24,51 @@
                 android:textColor="#A64454"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
+
         <EditText
-                android:id="@+id/loginPhone"
+                android:id="@+id/inputLoginPhone"
                 android:layout_marginTop="60dp"
                 android:layout_marginRight="44dp"
                 android:layout_marginLeft="44dp"
                 android:paddingLeft="25dp"
                 android:hint="Phone"
+                android:inputType="phone"
                 android:textColorHint="@color/colorText"
                 android:textColor="@color/colorText"
                 android:background="@drawable/stlye_forminput"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"/>
+
         <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/loginPassword"
+                android:id="@+id/inputLoginPassword"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="44dp"
                 android:layout_marginLeft="44dp"
                 android:paddingLeft="25dp"
                 android:hint="Password"
+                android:inputType="textPassword"
                 android:textColorHint="@color/colorText"
                 android:textColor="@color/colorText"
                 android:background="@drawable/stlye_forminput"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"/>
+
         <Button
-                android:id="@+id/button_login"
+                android:id="@+id/btn_login"
                 android:layout_marginTop="40dp"
-                android:layout_marginRight="104dp"
-                android:layout_marginLeft="104dp"
-                android:paddingLeft="25dp"
                 android:text="Login"
+                android:textAlignment="center"
                 android:textColor="@color/colorText"
                 android:background="@drawable/style_button"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="45dp"/>
 
             <TextView
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="20dp"
                     android:textAlignment="center"
                     android:id="@+id/back_to_register"
-                    android:textSize="15dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
                     android:text="Back to register"
                     android:textColor="@color/colorBackgroundTab"
                     android:layout_width="match_parent"

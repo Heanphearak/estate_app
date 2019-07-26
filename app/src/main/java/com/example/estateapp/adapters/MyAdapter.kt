@@ -1,10 +1,14 @@
-package com.example.estateapp
+package com.example.estateapp.adapters
 
 import android.content.Context
 import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.example.estateapp.fragments.AboutUsFragment
+import com.example.estateapp.fragments.HistoryFragment
+import com.example.estateapp.fragments.HomeFragment
+import com.example.estateapp.fragments.RegisterFragment
 
 class MyAdapter(private val myContext: Context, fm: FragmentManager,internal var totalTabs: Int) : FragmentPagerAdapter(fm) {
 
@@ -19,7 +23,7 @@ class MyAdapter(private val myContext: Context, fm: FragmentManager,internal var
             }
             1 -> {
                 Log.i("fragment1","hello1")
-                return PostRegisterFragment()
+                return RegisterFragment()
             }
             2 -> {
                 // val movieFragment = MovieFragment()

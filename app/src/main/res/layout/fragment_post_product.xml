@@ -3,7 +3,7 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:background="#91B7D9"
-              android:padding="15dp"
+              android:padding="8dp"
               android:gravity="center"
               android:layout_height="match_parent">
 
@@ -12,12 +12,12 @@
     <LinearLayout android:layout_width="match_parent"
                   android:background="@drawable/style_mainform"
                   android:orientation="vertical"
-                  android:layout_height="705dp">
+                  android:layout_height="720dp">
 
 
         <LinearLayout
 
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:gravity="right"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -47,7 +47,7 @@
 
 
         <LinearLayout android:layout_width="match_parent"
-                      android:layout_marginTop="15dp"
+                      android:layout_marginTop="2dp"
                       android:orientation="vertical"
                       android:padding="15dp"
                       android:layout_height="wrap_content">
@@ -56,7 +56,7 @@
             <LinearLayout android:layout_width="match_parent"
                           android:background="#fff"
                           android:gravity="center"
-                          android:layout_height="100dp">
+                          android:layout_height="80dp">
 
                 <ImageView android:layout_width="150dp"
                            android:scaleType="fitXY"
@@ -137,8 +137,9 @@
                 <EditText android:layout_width="match_parent"
                           android:inputType="textMultiLine"
                           android:hint="Description"
+                          android:textAlignment="center"
                           android:background="#fff"
-                          android:layout_height="60dp"/>
+                          android:layout_height="70dp"/>
 
             </LinearLayout>
 
@@ -187,23 +188,43 @@
                       android:layout_height="wrap_content"/>
 
 
-            <LinearLayout
-                    android:background="@drawable/google_map"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:orientation="horizontal"
+            <RelativeLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp">
+                    android:layout_height="90dp">
+
+
+                <ImageButton android:layout_width="match_parent"
+                             android:id="@+id/img_location"
+                             android:src="@drawable/google_map"
+                             android:layout_height="wrap_content"/>
 
 
                 <Button android:layout_width="150dp"
+                        android:id="@+id/btn_mark_location"
                         android:background="#fff"
+                        android:layout_centerInParent="true"
                         android:text="Mark Location"
                         android:textAllCaps="false"
                         android:textColor="#2BA8D9"
                         android:textStyle="bold"
                         android:layout_height="wrap_content"/>
 
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:gravity="center"
+                          android:layout_height="60dp">
+
+                <Button android:layout_width="150dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Post To Sale"
+                        android:background="#2BA8D9"
+                        android:textColor="@color/colorText"
+                        android:layout_height="40dp"/>
 
             </LinearLayout>
 

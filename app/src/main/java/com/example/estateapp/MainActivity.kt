@@ -5,6 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.example.estateapp.fragments.AboutUsFragment
+import com.example.estateapp.fragments.HistoryFragment
+import com.example.estateapp.fragments.HomeFragment
+import com.example.estateapp.fragments.RegisterFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -30,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.nav_post -> {
                     println("post pressed")
-                    val postFragment = PostRegisterFragment()
+                    val postFragment = RegisterFragment()
                     loadFragment(postFragment)
                     return@OnNavigationItemSelectedListener true
                 }
