@@ -1,8 +1,10 @@
 package com.example.estateapp
 
 
+import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
 import android.widget.Button
 import android.widget.PopupMenu
@@ -24,7 +26,15 @@ class MainActivity : AppCompatActivity(){
         setContentView(R.layout.activity_main)
 
 
+
+
         val dropDownHouse = findViewById<Button>(R.id.dpdHouse)
+
+//        dropDownHouse.setOnClickListener {
+//            showPopUp()
+//        }
+
+
         dropDownHouse.setOnClickListener {
 
             val popupMenu: PopupMenu = PopupMenu(this,dropDownHouse)
@@ -67,6 +77,7 @@ class MainActivity : AppCompatActivity(){
                 true
             })
 
+
             popupMenu.show()
 
         }
@@ -90,6 +101,7 @@ class MainActivity : AppCompatActivity(){
                 true
             })
 
+
             popupMenu.show()
         }
 
@@ -111,6 +123,7 @@ class MainActivity : AppCompatActivity(){
                 }
                 true
             })
+
 
             popupMenu.show()
         }
@@ -179,6 +192,22 @@ class MainActivity : AppCompatActivity(){
 
         bottom_nav_view.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
+    }
+
+
+    private fun showPopUp(){
+
+        val myDialog = Dialog(this)
+
+        myDialog.setContentView(R.layout.custom_popup_menu)
+
+
+        val window = myDialog.window
+        val wlp = window!!.attributes
+        window.setGravity(Gravity.LEFT)
+
+
+        myDialog.show()
     }
 
 

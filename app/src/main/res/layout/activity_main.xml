@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,11 +9,16 @@
         tools:context=".MainActivity">
 
 
-    <LinearLayout android:layout_width="match_parent"
-                  android:id="@+id/menu_toolbar"
-                  android:orientation="horizontal"
-                  android:background="#A64454"
-                  android:layout_height="50dp">
+    <LinearLayout
+            android:layout_width="0dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/menu_toolbar"
+            android:orientation="horizontal"
+            android:background="#A64454"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:layout_height="wrap_content">
 
 
         <LinearLayout android:layout_width="match_parent"
@@ -116,13 +121,15 @@
     </LinearLayout>
 
 
-
     <FrameLayout
-            android:layout_below="@id/menu_toolbar"
-            android:layout_above="@id/bottom_nav_view"
             android:id="@+id/fragmentContainer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_nav_view"
+            app:layout_constraintTop_toBottomOf="@id/menu_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
 
     </FrameLayout>
 
@@ -131,13 +138,14 @@
             android:background="#A64454"
             android:id="@+id/bottom_nav_view"
             app:menu="@menu/bottom_navigation_menu"
-            android:layout_width="match_parent"
-
-            android:layout_alignParentBottom="true"
+            android:layout_width="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:labelVisibilityMode="labeled"
             android:layout_height="wrap_content"
             app:itemTextColor="@drawable/item_selected_nav_view"
             app:itemIconTint="@drawable/item_selected_nav_view"
-            android:layout_marginBottom="0dp"/>
+    />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

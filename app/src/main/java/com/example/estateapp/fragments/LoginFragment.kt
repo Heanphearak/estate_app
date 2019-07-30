@@ -19,10 +19,10 @@ class LoginFragment: Fragment(){
         val view = inflater.inflate(R.layout.fragment_login,container,false)
 
 
-//        back_to_register.setOnClickListener {
-//            val fragment = RegisterFragment()
-//            loadFragment(fragment)
-//        }
+        back_to_register.setOnClickListener {
+            val fragment = RegisterFragment()
+            loadFragment(fragment)
+        }
 
         val backToRegister = view.findViewById(R.id.back_to_register) as TextView
 
